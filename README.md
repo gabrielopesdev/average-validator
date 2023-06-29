@@ -1,1 +1,1 @@
-# -average-validator
+# average-validator
