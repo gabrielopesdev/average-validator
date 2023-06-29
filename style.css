@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.table, th, td {
+    border: 1px solid rgb(131, 131, 131);
+    border-collapse: collapse;
+}
+
+.table input {
+    border: none;
+}

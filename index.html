@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validador de Média</title>
+</head>
+<body>
+    <h1>Validador de Média</h1>
+    <main class="container">
+        <table class="table">
+            <tr>
+                <th>Nome do aluno</th>
+                <th>1º bimestre</th>
+                <th>2º bimestre</th>
+                <th>3º bimestre</th>
+                <th>4º bimestre</th>
+                <th>Média Final</th>
+            </tr>
+            <tr id="info-joao">
+                <td>João</td>
+                <td><input type="number" class="joao-input"></td>
+                <td><input type="number" class="joao-input"></td>
+                <td><input type="number" class="joao-input"></td>
+                <td><input type="number" class="joao-input"></td>
+                <td><input type="number" id="joaomedia"></td>
+            </tr>
+            <tr id="info-alex">
+                <td>Alex</td>
+                <td><input type="number" class="alex-input"></td>
+                <td><input type="number" class="alex-input"></td>
+                <td><input type="number" class="alex-input"></td>
+                <td><input type="number" class="alex-input"></td>
+                <td><input type="number" id="Alexmedia"></td>
+            </tr>
+            <tr id="info-marcos">
+                <td>Marcos</td>
+                <td><input type="number" class="marcos-input"></td>
+                <td><input type="number" class="marcos-input"></td>
+                <td><input type="number" class="marcos-input"></td>
+                <td><input type="number" class="marcos-input"></td>
+                <td><input type="number" id="Marcosmedia"></td>
+            </tr>
+            <tr id="info-maria">
+                <td>Maria
+                </td>
+                <td><input type="number" class="maria-input"></td>
+                <td><input type="number" class="maria-input"></td>
+                <td><input type="number" class="maria-input"></td>
+                <td><input type="number" class="maria-input"></td>
+                <td><input type="number" id="Mariamedia"></td>
+            </tr>
+        </table>   
+        
+        <button onclick="
+        calculate()">
+            Calcular as médias
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
