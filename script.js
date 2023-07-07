@@ -1,37 +1,34 @@
-//const gradesJoaoInput = [document.querySelector('#joao1bm'), document.querySelector('#joao2bm'), document.querySelector('#joao3bm'), document.querySelector('#joao4bm')]
+function calculate() {
 
-const gradeJoaoInput = document.querySelectorAll('input[class="joao-input"]');
-var gradeJoao = []
+    function criarArray(lista, nodeList) {
 
-gradeJoaoInput.forEach(function(input) {
-    gradeJoao.push(input.value);
-});  
+        var lista = []
 
-//const gradesAlexInput = [document.querySelector('#alex1bm'), document.querySelector('#alex2bm'), document.querySelector('#alex3bm'), document.querySelector('#alex4bm')]
+        for (var i = 0; i < nodeList.length; i++) {
 
-const gradeAlexInput = document.querySelectorAll('input[class="alex-input"]');
-var gradeAlex = []
+            lista.push(parseInt(nodeList[i].value))
+        }
 
-gradeAlexInput.forEach(function(input) {
-    gradeAlex.push(input.value);
-})
+        return lista
+    }
 
+    // notas do João
+    let joaoGradeInput = document.querySelectorAll('input[class="joao-notas"]')
+    var joaoGrade = criarArray(joaoGrade, joaoGradeInput)
+    console.log(joaoGrade)
 
-//const gradesMarcosInput = [document.querySelector('#marcos1bm'), document.querySelector('#marcos2bm'), document.querySelector('#marcos3bm'), document.querySelector('#marcos4bm')]
+    // notas do Alex
+    let AlexGradeInput = document.querySelectorAll('input[class="alex-input"]')
+    var alexGrade = criarArray(alexGrade, AlexGradeInput)
+    console.log(alexGrade)
 
-const gradeMarcosInput = document.querySelectorAll('input[class="marcos-input"]');
-var gradeMarcos = []
+    //notas do Marcos
+    let MarcosGradeInput = document.querySelectorAll('input[class="marcos-input"]')
+    var marcosGrade = criarArray(marcosGrade, MarcosGradeInput)
+    console.log(marcosGrade)
 
-gradeMarcosInput.forEach(function(input) {
-    gradeMarcos.push(input.value);
-});  
-
-//const gradesMariaInput = [document.querySelector('#maria1bm'), document.querySelector('#maria2bm'), document.querySelector('#maria3bm'), document.querySelector('#maria4bm')]
-
-const gradeMariaInput = document.querySelectorAll('input[class="maria-input"]');
-var gradeMaria = []
-
-gradeMariaInput.forEach(function(input) {
-    gradeMaria.push(input.value);
-});  
-
+    //notas do Maria
+    let MariaGradeInput = document.querySelectorAll('input[class="maria-input"]')        
+    var mariaGrade = criarArray(mariaGrade, MariaGradeInput)
+    console.log(mariaGrade)
+}
