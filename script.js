@@ -15,20 +15,49 @@ function calculate() {
     // notas do João
     let joaoGradeInput = document.querySelectorAll('input[class="joao-notas"]')
     var joaoGrade = criarArray(joaoGrade, joaoGradeInput)
-    console.log(joaoGrade)
+
+    let joaoMediaInput = document.querySelector('#joao-media')
 
     // notas do Alex
     let AlexGradeInput = document.querySelectorAll('input[class="alex-input"]')
     var alexGrade = criarArray(alexGrade, AlexGradeInput)
-    console.log(alexGrade)
+
+    let alexMediaInput = document.querySelector('#alex-media')
 
     //notas do Marcos
     let MarcosGradeInput = document.querySelectorAll('input[class="marcos-input"]')
     var marcosGrade = criarArray(marcosGrade, MarcosGradeInput)
-    console.log(marcosGrade)
+
+    let marcosMediaInput = document.querySelector('#marcos-media')
 
     //notas do Maria
     let MariaGradeInput = document.querySelectorAll('input[class="maria-input"]')        
     var mariaGrade = criarArray(mariaGrade, MariaGradeInput)
-    console.log(mariaGrade)
+
+    let mariaMediaInput = document.querySelector('#maria-media')
+
+    function media(aluno) {
+
+        function calcMedia(n1, n2, n3, n4) {
+        
+            let media = (n1 + n2 + n3 + n4) / 4
+            return media
+        }
+
+        const mediaFinal = calcMedia(aluno[0], aluno[1], aluno[2], aluno[3])
+        return mediaFinal
+
+    }
+
+    function imprimirMedia(input, aluno) {
+
+        input.value = media(aluno)
+
+    }
+    
+    imprimirMedia(joaoMediaInput, joaoGrade)
+    imprimirMedia(alexMediaInput, alexGrade)
+    imprimirMedia(marcosMediaInput, marcosGrade)
+    imprimirMedia(mariaMediaInput, mariaGrade)
+
 }
