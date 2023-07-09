@@ -10,20 +10,22 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: center;    background-color: aliceblue;
+    justify-content: center;   
+    background-color: aliceblue;
     box-shadow: 5px 5px 5px 1px black;
     margin: 100px;
     padding: 30px;
     gap: 20px;
     border-radius: 15px;
-
+    
 }
 
 .table, th, td {
     border: 1px solid rgb(131, 131, 131);
     border-collapse: collapse;
+    
 }
 
 .table input {
@@ -32,6 +34,9 @@ body {
 
 .container .button { 
     padding: 15px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+    
 }
     
     
