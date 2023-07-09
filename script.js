@@ -7,9 +7,11 @@ function calculate() {
         for (var i = 0; i < nodeList.length; i++) {
 
             lista.push(parseInt(nodeList[i].value))
+            
         }
 
         return lista
+
     }
 
     // notas do João
@@ -42,6 +44,7 @@ function calculate() {
         
             let media = (n1 + n2 + n3 + n4) / 4
             return media
+
         }
 
         const mediaFinal = calcMedia(aluno[0], aluno[1], aluno[2], aluno[3])
@@ -50,6 +53,16 @@ function calculate() {
     }
 
     function imprimirMedia(input, aluno) {
+
+        if(media(aluno) <= 6 || media(aluno) <= 0) {
+
+            input.style.backgroundColor = "#FF0F0F";
+        
+        } else {
+
+            input.style.backgroundColor = "#31FF4E";
+
+        }
 
         input.value = media(aluno)
 
