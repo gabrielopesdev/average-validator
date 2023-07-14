@@ -1,7 +1,7 @@
 function calculate() {
 
-    function criarArray(lista, nodeList) {
-
+    let criarArray = (lista, nodeList) => {
+    
         var lista = []
 
         for (var i = 0; i < nodeList.length; i++) {
@@ -38,21 +38,17 @@ function calculate() {
 
     let mariaMediaInput = document.querySelector('#maria-media')
 
-    function media(aluno) {
+    var media = (aluno) => {
 
-        function calcMedia(n1, n2, n3, n4) {
-        
-            let media = (n1 + n2 + n3 + n4) / 4
-            return media
-
-        }
+        let calcMedia = (n1, n2, n3, n4) => (n1 + n2 + n3 + n4) / 4
 
         const mediaFinal = calcMedia(aluno[0], aluno[1], aluno[2], aluno[3])
+
         return mediaFinal
 
     }
 
-    function imprimirMedia(input, aluno) {
+    var imprimirMedia = (input, aluno) => {
 
         if(media(aluno) <= 6 || media(aluno) <= 0) {
 
